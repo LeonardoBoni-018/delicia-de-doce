@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delícia de Doce — Encomendas de bolos, box e doces</title>
+  <meta name="description" content="Box, bolos e doces feitos com carinho em São Leopoldo e Novo Hamburgo. Monte seu pedido e envie pelo WhatsApp." />
+  <meta name="theme-color" content="#f3e2df" />
+  <meta property="og:title" content="Delícia de Doce — Encomendas" />
+  <meta property="og:description" content="Box, bolos e doces feitos com carinho. Peça pelo WhatsApp." />
+  <meta property="og:image" content="img/hero.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#vitrine">Pular para os produtos</a>
+
+  <!-- Faixa de prévia (controlada por CONFIG.modoPrevia) -->
+  <div class="previa" id="previa" hidden>Prévia — demonstração para aprovação</div>
+
+  <header class="topo" id="topo">
+    <div class="wrap topo__in">
+      <a class="marca" href="#inicio" aria-label="Delícia de Doce, início">
+        <span class="marca__selo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="19" fill="#9e4652"/><path d="M11 22c0-5 4-9 9-9s9 4 9 9" fill="#f3e2df"/><rect x="12" y="22" width="16" height="8" rx="2" fill="#fbf5ef"/><circle cx="20" cy="11" r="2.4" fill="#fbf5ef"/></svg>
+        </span>
+        <span class="marca__nome" data-config="nome">Delícia de Doce</span>
+      </a>
+      <nav class="topo__nav" aria-label="Seções">
+        <a href="#vitrine">Cardápio</a>
+        <a href="#como">Como pedir</a>
+        <a href="#entrega">Entrega</a>
+      </nav>
+      <a class="btn btn--ghost btn--sm" id="link-insta-topo" href="#" target="_blank" rel="noopener" aria-label="Instagram da Delícia de Doce">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        <span class="so-desk">Instagram</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <!-- granulados decorativos flutuando -->
+      <div class="granulado" aria-hidden="true">
+        <i style="--x:88%;--y:14%;--r:20deg;--c:#c9707a;--d:0s"></i>
+        <i style="--x:46%;--y:10%;--r:-35deg;--c:#8f5e45;--d:1.2s"></i>
+        <i style="--x:30%;--y:82%;--r:60deg;--c:#e8b4a0;--d:.6s"></i>
+        <i style="--x:92%;--y:70%;--r:-15deg;--c:#c9707a;--d:2s"></i>
+        <i style="--x:60%;--y:92%;--r:80deg;--c:#3e2620;--d:1.6s"></i>
+        <i style="--x:18%;--y:55%;--r:-70deg;--c:#8f5e45;--d:2.4s"></i>
+      </div>
+
+      <div class="wrap hero__grade">
+        <div class="hero__texto">
+          <p class="hero__kicker entra" style="--i:0"><span class="ponto" aria-hidden="true"></span> Aceitando encomendas · São Leopoldo e Novo Hamburgo</p>
+          <h1 class="hero__titulo entra" style="--i:1">Doces que viram <em>lembrança</em> boa.</h1>
+          <p class="hero__slogan entra" style="--i:2"><span data-config="slogan">Box, bolos e doces feitos com carinho</span>, enrolados à mão e montados no dia da sua festa.</p>
+          <div class="hero__acoes entra" style="--i:3">
+            <a class="btn btn--primary" href="#vitrine">Ver cardápio
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--link" href="#como">Como funciona</a>
+          </div>
+          <ul class="hero__fatos entra" style="--i:4">
+            <li><strong><span data-config="antecedencia">2</span> dias</strong><span>de antecedência</span></li>
+            <li><strong>Retirada</strong><span>ou entrega</span></li>
+            <li><strong>WhatsApp</strong><span>pedido direto</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__fotos entra" style="--i:2">
+          <figure class="hero__foto hero__foto--grande">
+            <img src="img/hero.jpg" alt="Fatia de bolo de chocolate com creme e cacau, servida em prato branco" width="960" height="653" fetchpriority="high" />
+          </figure>
+          <figure class="hero__foto hero__foto--mini">
+            <img src="img/brigadeiros-cento.jpg" alt="Brigadeiros gourmet com granulado" width="960" height="641" />
+          </figure>
+          <!-- selo giratório -->
+          <div class="selo-gira" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circulo" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <text textLength="272" lengthAdjust="spacing"><textPath href="#circulo" textLength="272" lengthAdjust="spacing">feito com carinho • sob encomenda •</textPath></text>
+            </svg>
+            <span>🧁</span>
+          </div>
+          <div class="hero__cartao">
+            <span class="hero__cartao-emoji" aria-hidden="true">💝</span>
+            <div><strong>Box presente</strong><span>pronto pra surpreender</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAIXA CORRENDO ===== -->
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa__trilho">
+        <span>Brigadeiro gourmet</span><b>✦</b><span>Bolo de festa</span><b>✦</b><span>Box café da manhã</span><b>✦</b><span>Brownie recheado</span><b>✦</b><span>Docinhos para casamento</span><b>✦</b>
+        <span>Brigadeiro gourmet</span><b>✦</b><span>Bolo de festa</span><b>✦</b><span>Box café da manhã</span><b>✦</b><span>Brownie recheado</span><b>✦</b><span>Docinhos para casamento</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ===== VITRINE ===== -->
+    <section class="vitrine" id="vitrine" tabindex="-1" aria-labelledby="vitrine-titulo">
+      <div class="wrap">
+        <div class="secao__cabeca revela">
+          <p class="secao__kicker">Cardápio</p>
+          <h2 id="vitrine-titulo" class="secao__titulo">Escolha suas delícias</h2>
+          <p class="secao__sub">Toque em <strong>Adicionar</strong>, ajuste sabores e tamanhos e finalize no carrinho.</p>
+        </div>
+        <div class="filtros" role="group" aria-label="Filtrar por categoria" id="filtros"></div>
+        <div class="grade" id="grade" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===== COMO PEDIR ===== -->
+    <section class="como" id="como" aria-labelledby="como-titulo">
+      <div class="wrap">
+        <div class="secao__cabeca revela">
+          <p class="secao__kicker">Simples assim</p>
+          <h2 id="como-titulo" class="secao__titulo">Como fazer sua encomenda</h2>
+        </div>
+        <ol class="passos">
+          <li class="passo revela" style="--i:0">
+            <span class="passo__num">1</span>
+            <span class="passo__icone" aria-hidden="true">🛍️</span>
+            <h3>Monte o pedido</h3>
+            <p>Escolha os doces, sabores e tamanhos aqui no cardápio.</p>
+          </li>
+          <li class="passo revela" style="--i:1">
+            <span class="passo__num">2</span>
+            <span class="passo__icone" aria-hidden="true">📅</span>
+            <h3>Escolha a data</h3>
+            <p>Com pelo menos <span data-config="antecedencia">2</span> dias de antecedência, retirada ou entrega.</p>
+          </li>
+          <li class="passo revela" style="--i:2">
+            <span class="passo__num">3</span>
+            <span class="passo__icone" aria-hidden="true">💬</span>
+            <h3>Envie no WhatsApp</h3>
+            <p>A mensagem já vai prontinha. A gente confirma valores e combina o resto.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== DESTAQUE ===== -->
+    <section class="destaque" aria-labelledby="destaque-titulo">
+      <div class="wrap destaque__grade">
+        <figure class="destaque__foto revela">
+          <img src="img/box-mini-doces.jpg" alt="Bandeja de docinhos sortidos: brigadeiro, beijinho e cajuzinho" width="960" height="1280" loading="lazy" />
+        </figure>
+        <div class="destaque__texto revela" style="--i:1">
+          <p class="secao__kicker secao__kicker--claro">Para presentear</p>
+          <h2 id="destaque-titulo">Uma caixinha de doces diz muito.</h2>
+          <p>Aniversário, dia das mães, um obrigado ou só porque sim. Os box saem montados, com laço e cartão escrito à mão se você pedir.</p>
+          <a class="btn btn--claro" href="#vitrine" data-filtro-atalho="Box">Ver os box</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENTREGA ===== -->
+    <section class="entrega" id="entrega" aria-labelledby="entrega-titulo">
+      <div class="wrap entrega__grade">
+        <div class="revela">
+          <p class="secao__kicker">Entrega e retirada</p>
+          <h2 id="entrega-titulo" class="secao__titulo">Levamos até você</h2>
+          <p class="secao__sub" data-config="avisoTaxa"></p>
+        </div>
+        <ul class="cidades revela" style="--i:1" id="cidades"></ul>
+      </div>
+    </section>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <section class="insta">
+      <div class="wrap insta__in revela">
+        <h2>Bastidores, novidades e muita vontade de comer doce</h2>
+        <a class="btn btn--primary" id="link-insta-cta" href="#" target="_blank" rel="noopener">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Seguir <span data-config="instaUser"></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap rodape__in">
+      <div>
+        <p class="rodape__marca" data-config="nome">Delícia de Doce</p>
+        <p data-config="slogan">Box, bolos e doces feitos com carinho</p>
+      </div>
+      <div>
+        <p>Encomendas com <span data-config="antecedencia">2</span> dias de antecedência</p>
+        <a id="link-insta-rodape" href="#" target="_blank" rel="noopener">Instagram <span data-config="instaUser"></span></a>
+      </div>
+      <p class="rodape__credito">Site por Leonardo Boni</p>
+      <p class="rodape__fotos" id="creditos-fotos"></p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do carrinho -->
+  <button class="fab" id="abrir-carrinho" aria-controls="carrinho" aria-expanded="false">
+    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+    <span class="fab__txt">Meu pedido</span>
+    <span class="fab__total" id="fab-total"></span>
+    <span class="fab__badge" id="contador">0</span>
+  </button>
+
+  <!-- Gaveta do carrinho -->
+  <div class="veu" id="veu" hidden></div>
+  <aside class="gaveta" id="carrinho" role="dialog" aria-modal="true" aria-labelledby="carrinho-titulo" hidden>
+    <div class="gaveta__topo">
+      <h2 id="carrinho-titulo">Seu pedido</h2>
+      <button class="icone-btn" id="fechar-carrinho" aria-label="Fechar carrinho">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="gaveta__corpo">
+      <ul class="itens" id="itens"></ul>
+      <div class="vazio" id="vazio">
+        <span class="vazio__emoji" aria-hidden="true">🧁</span>
+        <p>Seu carrinho está vazio.<br />Que tal um docinho?</p>
+        <button type="button" class="btn btn--ghost btn--sm" id="vazio-voltar">Ver cardápio</button>
+      </div>
+
+      <!-- Tela de sucesso (aparece depois de enviar o pedido) -->
+      <div class="sucesso" id="sucesso" tabindex="-1" role="status" hidden>
+        <svg class="sucesso__check" viewBox="0 0 80 80" aria-hidden="true">
+          <circle cx="40" cy="40" r="36" />
+          <path d="M24 41l11 11 22-24" />
+        </svg>
+        <h3 id="sucesso-nome">Obrigada!</h3>
+        <p>Seu pedido foi aberto no WhatsApp. É só <strong>enviar a mensagem</strong> por lá que a gente confirma valores e combina os detalhes.</p>
+        <a class="btn btn--whats btn--sm" id="sucesso-reenviar" href="#" target="_blank" rel="noopener">Abrir WhatsApp de novo</a>
+        <button type="button" class="btn btn--link" id="sucesso-fechar">Voltar ao site</button>
+        <span class="sucesso__barra" aria-hidden="true"></span>
+      </div>
+
+      <div class="subtotal" id="bloco-subtotal">
+        <span>Subtotal</span><strong id="subtotal">R$ 0,00</strong>
+      </div>
+
+      <form class="form" id="form-pedido" novalidate>
+        <h3>Finalizar pedido</h3>
+
+        <div class="campo">
+          <label for="f-nome">Seu nome *</label>
+          <input id="f-nome" name="nome" autocomplete="name" required />
+          <p class="erro" id="e-nome"></p>
+        </div>
+        <div class="campo">
+          <label for="f-tel">Telefone / WhatsApp *</label>
+          <input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(51) 90000-0000" required />
+          <p class="erro" id="e-tel"></p>
+        </div>
+
+        <fieldset class="campo modo">
+          <legend>Como prefere receber? *</legend>
+          <label class="pill"><input type="radio" name="modo" value="retirada" checked /> <span>🏠 Retirada</span></label>
+          <label class="pill"><input type="radio" name="modo" value="entrega" /> <span>🛵 Entrega</span></label>
+        </fieldset>
+
+        <div id="bloco-entrega" class="bloco-entrega" hidden>
+          <div class="campo">
+            <label for="f-cidade">Cidade *</label>
+            <select id="f-cidade" name="cidade"></select>
+          </div>
+          <div class="campo">
+            <label for="f-bairro">Bairro *</label>
+            <input id="f-bairro" name="bairro" />
+            <p class="erro" id="e-bairro"></p>
+          </div>
+          <div class="campo">
+            <label for="f-end">Endereço completo *</label>
+            <input id="f-end" name="endereco" autocomplete="street-address" placeholder="Rua, número, complemento" />
+            <p class="erro" id="e-end"></p>
+          </div>
+          <p class="aviso" id="aviso-taxa"></p>
+        </div>
+
+        <div class="linha">
+          <div class="campo">
+            <label for="f-data">Data desejada *</label>
+            <input id="f-data" name="data" type="date" required />
+            <p class="erro" id="e-data"></p>
+          </div>
+          <div class="campo">
+            <label for="f-hora">Horário <span class="opc">(opcional)</span></label>
+            <input id="f-hora" name="hora" type="time" />
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="f-obs">Observações</label>
+          <textarea id="f-obs" name="obs" rows="3" placeholder="Ex.: escrever “Feliz aniversário, Ana” no bolo"></textarea>
+        </div>
+
+        <p class="erro erro--geral" id="e-geral"></p>
+        <button class="btn btn--whats" type="submit">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+          Enviar pedido pelo WhatsApp
+        </button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Aviso rápido ("adicionado!") -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

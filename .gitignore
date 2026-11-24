@@ -1,0 +1,6 @@
+.claude/
+.wrangler/
+wrangler.jsonc
+.assetsignore
+node_modules/
+.taste-skill/
